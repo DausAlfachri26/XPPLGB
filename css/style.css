@@ -29,9 +29,9 @@ header.main-header h1 {
   font-weight: 600;
 }
 
-/* ======================= */
-/* NAVIGATION MENU STYLES */
-/* ======================= */
+/* =============== */
+/*  MENU NAVIGASI  */
+/* =============== */
 .main-nav {
   position: fixed;
   top: 0;
@@ -88,7 +88,7 @@ header.main-header h1 {
   width: 100%;
 }
 
-/* Mobile menu button */
+/* button buat mobile */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -110,7 +110,7 @@ header.main-header h1 {
   transition: all 0.3s ease;
 }
 
-/* Mobile menu styles */
+/* menu mobile */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -149,7 +149,7 @@ header.main-header h1 {
   background: rgba(255, 82, 82, 0.2);
 }
 
-/* Overlay for mobile menu */
+/* overlay mobile */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -169,7 +169,7 @@ header.main-header h1 {
   visibility: visible;
 }
 
-/* Responsive styles */
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -179,7 +179,7 @@ header.main-header h1 {
     display: flex;
   }
   
-  /* Animate hamburger icon when active */
+  /* Animasi */
   .mobile-menu-btn.active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -193,14 +193,14 @@ header.main-header h1 {
   }
 }
 
-/* Adjust header margin to account for fixed nav */
+/* nyambungin header ama nav */
 header.main-header {
   margin-top: 70px;
 }
 
-/* ======================= */
-/* GLASSMORPHISM NAVBAR */
-/* ======================= */
+/* =================== */
+/*  NAVBAR KECE ABIES  */
+/* =================== */
 .main-nav {
   position: fixed;
   top: 0;
@@ -316,7 +316,7 @@ header.main-header {
   transform: scale(1.2);
 }
 
-/* Mobile Menu Button */
+/* Button mobile */
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -361,7 +361,7 @@ header.main-header {
   background: #ff5252;
 }
 
-/* Mobile Menu */
+/* menu mobile */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -491,7 +491,7 @@ header.main-header {
   visibility: visible;
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 992px) {
   .nav-links {
     gap: 5px;
@@ -538,14 +538,7 @@ header.main-header {
 }
 
 
-
-
-
-
-
-
-
-/* Active Section Highlight */
+/* mulai section */
 section:target::before {
   content: '';
   display: block;
@@ -572,9 +565,9 @@ section h2::after {
   border-radius: 5px;
 }
 
-/* ======================= */
-/* DARK MODE ORGANIGRAMMI  */
-/* ======================= */
+/* ======================== */
+/*  ORGANIGRAM MODE GELAP   */
+/* ======================== */
 
 .grid-struktur {
   display: grid;
@@ -586,7 +579,7 @@ section h2::after {
   position: relative;
 }
 
-/* Wali Kelas - Top Center */
+/* Wali Kelas tengah */
 .wali-kelas {
   grid-column: 2 / span 2;
   grid-row: 1;
@@ -598,7 +591,7 @@ section h2::after {
   width: 80%;
 }
 
-/* KM (Left) and Wakil KM (Right) - Spaced Out */
+/* KM kiri and Wakil KM kanan */
 .km {
   grid-column: 1 / span 2;
   grid-row: 2;
@@ -613,7 +606,7 @@ section h2::after {
   margin-left: 40px;
 }
 
-/* Sekretaris and Bendahara - Full Width */
+/* Sekretaris Bendahara*/
 .sekretaris1 {
   grid-column: 1;
   grid-row: 3;
@@ -634,7 +627,7 @@ section h2::after {
   grid-row: 3;
 }
 
-/* Kebersihan and Keamanan - Full Width */
+/* Kebersihan Keamanan */
 .kebersihan1 {
   grid-column: 1;
   grid-row: 4;
@@ -655,7 +648,7 @@ section h2::after {
   grid-row: 4;
 }
 
-/* Absensi - Spaced Like KM */
+/* Absensi */
 .absensi1 {
   grid-column: 1 / span 2;
   grid-row: 5;
@@ -670,7 +663,7 @@ section h2::after {
   margin-left: 40px;
 }
 
-/* Elegant Card Styling */
+/* card styling  */
 .card {
   background: #1e1e2e;
   border-radius: 16px;
@@ -764,16 +757,16 @@ section h2::after {
   margin-top: 5px;
 }
 
-/* Role Colors */
+/* warna kartu biar kece */
 .km { --role-color: #1976d2; --role-color-light: #42a5f5; }
 .wakil-km { --role-color: #388e3c; --role-color-light: #66bb6a; }
 [class*="sekretaris"] { --role-color: #7b1fa2; --role-color-light: #ab47bc; }
 [class*="bendahara"] { --role-color: #ffa000; --role-color-light: #ffca28; }
 [class*="kebersihan"] { --role-color: #388e3c; --role-color-light: #66bb6a; }
-[class*="keamanan"] { --role-color: #f53100; --role-color-light: #ff5100; }
+[class*="keamanan"] { --role-color: #ff6003; --role-color-light: #fc7a2e; }
 [class*="absensi"] { --role-color: #5d4037; --role-color-light: #8d6e63; }
 
-/* Responsive Design - Improved */
+/* Responsive */
 @media (max-width: 900px) {
   .grid-struktur {
     grid-template-columns: repeat(2, 1fr);
@@ -794,7 +787,7 @@ section h2::after {
     margin: 0;
   }
   
-  /* Reset grid positions for all cards except wali-kelas */
+  /* Reset grid positions */
   .card:not(.wali-kelas) {
     grid-column: auto !important;
     grid-row: auto !important;
@@ -823,7 +816,7 @@ section h2::after {
     width: 100%;
   }
   
-  /* Remove all grid positioning for mobile */
+  /* remove grid buat mobile */
   .card:not(.wali-kelas) {
     grid-column: initial !important;
     grid-row: initial !important;
@@ -834,7 +827,6 @@ section h2::after {
 /*  GALERY SECTION  */
 /* ================ */
 
-/* Common Styles */
 #galeri {
   padding: 60px 20px;
   background: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 100%);
@@ -930,7 +922,7 @@ section h2::after {
   transform: scale(1.05);
 }
 
-/* Responsive Breakpoint */
+/* Responsive */
 @media (min-width: 768px) {
   .mobile-gallery {
     display: none;
@@ -941,7 +933,7 @@ section h2::after {
   }
 }
 
-/* Slider Controls (Mobile Only) */
+/* slider control buat mobile */
 .slider-controls {
   display: flex;
   justify-content: center;
@@ -985,7 +977,7 @@ section h2::after {
   transform: scale(1.2);
 }
 
-/* Mobile Gallery Slider */
+/* slider galeri mobile */
 .mobile-gallery {
   width: 100%;
   padding: 0 20px;
@@ -1031,10 +1023,10 @@ section h2::after {
   height: 100%;
   object-fit: cover;
   display: block;
-  pointer-events: none; /* Prevent image from interfering with slide clicks */
+  pointer-events: none;
 }
 
-/* Slider Controls */
+/* Slider */
 .slider-controls {
   display: flex;
   justify-content: center;
@@ -1089,7 +1081,7 @@ section h2::after {
   }
 }
 
-/* Responsive Design - Mobile Only */
+/* Responsive mobile */
 @media (max-width: 600px) {
   .grid-struktur {
     display: grid;
@@ -1107,7 +1099,7 @@ section h2::after {
     margin: 0 auto 20px;
   }
   
-  /* Reset all margins and alignments */
+  /* reset margin */
   .card:not(.wali-kelas) {
     width: 100%;
     max-width: 100%;
@@ -1115,7 +1107,7 @@ section h2::after {
     justify-self: center;
   }
   
-  /* Position each pair side by side */
+  /* posisi kartu */
   .km {
     grid-column: 1;
     grid-row: 2;
@@ -1176,7 +1168,7 @@ section h2::after {
     grid-row: 7;
   }
   
-  /* Untuk layar sangat kecil (di bawah 400px) */
+  /* layar dibawah 400px */
   @media (max-width: 400px) {
     .grid-struktur {
       gap: 10px;
@@ -1193,9 +1185,9 @@ section h2::after {
   }
 }
 
-/* ======================= */
-/* UCAPAN TERIMA KASIH */
-/* ======================= */
+/* ===================== */
+/*  UCAPAN TERIMA KASIH  */
+/* ===================== */
 #ucapan {
   padding: 60px 20px;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -1253,7 +1245,7 @@ section h2::after {
   line-height: 1.5;
 }
 
-/* Scrollbar styling */
+/* styling scroll  */
 .ucapan-container::-webkit-scrollbar {
   width: 8px;
 }
@@ -1272,7 +1264,7 @@ section h2::after {
   background: #ff6b6b;
 }
 
-/* Responsive design */
+/* Responsive */
 @media (max-width: 768px) {
   .ucapan-container {
     max-height: 400px;
@@ -1289,9 +1281,9 @@ section h2::after {
   }
 }
 
-/* ======================= */
-/* TENTANG KAMI SECTION */
-/* ======================= */
+/* ====================== */
+/*  TENTANG KAMI SECTION  */
+/* ====================== */
 #about {
   padding: 80px 20px;
   background: linear-gradient(135deg, #1a1a2e 0%, #0f0c29 100%);
@@ -1361,7 +1353,7 @@ section h2::after {
   font-weight: 600;
 }
 
-/* Responsive Design untuk Tentang Kami */
+/* Responsive */
 @media (max-width: 768px) {
   #about {
     padding: 60px 15px;
@@ -1397,9 +1389,9 @@ section h2::after {
   }
 }
 
-/* ======================= */
-/* PROFESSIONAL FOOTER */
-/* ======================= */
+/* ==================== */
+/*  FOOTER PROPESIONAL  */
+/* ==================== */
 footer {
   background: linear-gradient(135deg, #0f0c29 0%, #1a1a2e 100%);
   padding: 60px 20px 30px;
@@ -1559,11 +1551,11 @@ footer::after {
   }
 }
 
-/* ======================= */
-/* ENHANCEMENT STYLES */
-/* ======================= */
+/* ========================== */
+/*  STYLING STYLING TAMBAHAN  */
+/* ========================== */
 
-/* Animated Background Elements */
+/* Animasi background */
 body {
   position: relative;
   overflow-x: hidden;
@@ -1594,7 +1586,7 @@ body::after {
   left: -150px;
 }
 
-/* Section Dividers */
+/* buat section */
 section {
   position: relative;
 }
@@ -1611,7 +1603,7 @@ section::after {
   background: linear-gradient(90deg, transparent, rgba(255, 82, 82, 0.3), transparent);
 }
 
-/* Particle Effects */
+/* efek partikel */
 .particle {
   position: fixed;
   background: rgba(255, 255, 255, 0.3);
@@ -1627,7 +1619,7 @@ section::after {
   }
 }
 
-/* Header Animation */
+/* animasi header */
 header.main-header {
   position: relative;
   overflow: hidden;
@@ -1654,7 +1646,7 @@ header.main-header::after {
   }
 }
 
-/* Scroll Indicator */
+/* indikator scroll */
 .scroll-indicator {
   position: fixed;
   bottom: 30px;
@@ -1667,7 +1659,7 @@ header.main-header::after {
   z-index: 100;
   opacity: 0.7;
   transition: opacity 0.3s;
-  display: none; /* Akan diaktifkan oleh JS */
+  display: none;
 }
 
 .scroll-indicator::before {
@@ -1692,7 +1684,7 @@ header.main-header::after {
   }
 }
 
-/* Responsive Adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   body::before, body::after {
     opacity: 0.05;
@@ -1703,9 +1695,9 @@ header.main-header::after {
   }
 }
 
-/* ======================= */
-/* VERTICAL SWIPE INDICATOR (MOBILE) */
-/* ======================= */
+/* ============================= */
+/*  SWIPE VERTIKAL UNTUK MOBILE  */
+/* ============================= */
 .swipe-indicator {
   display: none;
   position: fixed;
@@ -1738,7 +1730,7 @@ header.main-header::after {
     opacity: 0.6;
   }
   50% {
-    transform: translateY(10px); /* Diubah dari -10px ke 10px untuk animasi ke bawah */
+    transform: translateY(10px);
     opacity: 1;
   }
 }

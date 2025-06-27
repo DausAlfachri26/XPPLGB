@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Enhanced Navbar Functionality
+  // navbar function
 const nav = document.querySelector('.main-nav');
 const mobileMenu = document.querySelector('.mobile-menu');
 const overlay = document.querySelector('.menu-overlay');
@@ -167,7 +167,7 @@ const menuBtn = document.querySelector('.mobile-menu-btn');
 const closeBtn = document.querySelector('.menu-close-btn');
 const navItems = document.querySelectorAll('.nav-item, .mobile-nav-item');
 
-// Scroll effect for navbar
+// Scroll effect navbar
 window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     nav.classList.add('scrolled');
@@ -194,7 +194,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Mobile menu toggle
+// Mobile menu 
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
   overlay.classList.toggle('active');
@@ -216,7 +216,7 @@ overlay.addEventListener('click', () => {
   document.body.style.overflow = '';
 });
 
-// Smooth scrolling with offset
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
     e.preventDefault();
@@ -225,13 +225,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const targetElement = document.querySelector(targetId);
     
     if (targetElement) {
-      // Close mobile menu if open
+      // Close mobile menu
       mobileMenu.classList.remove('active');
       overlay.classList.remove('active');
       menuBtn.classList.remove('active');
       document.body.style.overflow = '';
       
-      // Smooth scroll to target
+      // Smooth scroll
       window.scrollTo({
         top: targetElement.offsetTop - 70,
         behavior: 'smooth'
@@ -240,7 +240,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-  // Create floating particles
+  // Crfloating partikel struktur
   function createParticles() {
     const particleCount = window.innerWidth < 768 ? 15 : 30;
     for (let i = 0; i < particleCount; i++) {
@@ -265,7 +265,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   }
 
-  // Create swipe indicator for mobile
+  // swipe indikator mobile
   function createSwipeIndicator() {
     const indicator = document.createElement('div');
     indicator.className = 'swipe-indicator';

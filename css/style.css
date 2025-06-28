@@ -232,14 +232,13 @@ header.main-header {
 }
 
 .logo-text {
-  color: #fff;
+  color: white;
+  text-shadow: 
+    2px 2px 0px #FF0000, 
+    4px 4px 0px #700000a9;
   font-weight: 700;
   font-size: 1.3rem;
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #ff5252, #42a5f5);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .logo-dot {
@@ -393,15 +392,15 @@ header.main-header {
 }
 
 .mobile-logo {
-  color: #fff;
+  color: white;
+  text-shadow: 
+    2px 2px 0px #FF0000, 
+    4px 4px 0px #700000a9;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #ff5252, #42a5f5);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
+
 
 .menu-close-btn {
   color: rgba(255, 255, 255, 0.7);
